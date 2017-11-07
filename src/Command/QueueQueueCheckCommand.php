@@ -49,7 +49,7 @@ class QueueQueueCheckCommand extends Command
      */
     public function handle()
     {
-        QueueMonitor::queueQueueCheck($this->argument('queue'));
+        $this->fire();
     }
 
     /**

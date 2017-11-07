@@ -37,6 +37,16 @@ class QueueQueueCheckCommand extends Command
      *
      * @return mixed
      */
+    public function fire()
+    {
+        QueueMonitor::queueQueueCheck($this->argument('queue'));
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return mixed
+     */
     public function handle()
     {
         QueueMonitor::queueQueueCheck($this->argument('queue'));

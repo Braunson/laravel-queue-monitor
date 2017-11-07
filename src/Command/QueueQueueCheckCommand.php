@@ -33,7 +33,7 @@ class QueueQueueCheckCommand extends Command
     }
 
     /**
-     * Execute the console command.
+     * Execute the console command for Laravel 5.4 or older
      *
      * @return mixed
      */
@@ -43,7 +43,7 @@ class QueueQueueCheckCommand extends Command
     }
 
     /**
-     * Execute the console command.
+     * Execute the console command for Laravel 5.5+
      *
      * @return mixed
      */
